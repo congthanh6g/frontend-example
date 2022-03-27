@@ -30,7 +30,7 @@ export default {
   {
     retrieveUsers()
     {
-      axios.get("http://localhost:8080/api/user").then(response => {
+      axios.get("https://heroku-backend-example.herokuapp.com/api/user").then(response => {
           this.users = response.data;
       }).catch(e => {
                 console.log(e);
